@@ -76,4 +76,6 @@ function mergeSort(arr, p, r) {
   }
 }
 ```
-The `merge` function sorts the entire array given that its subarrays `arr[0, q - 1]` and `arr[q, arr.length]` are already sorted. The `mergeSort` then incorporates it to recursively divide the initial array and then subarrays into smaller ones and merging them. The divisions stop at arrays of length 1, which are trivially sorted. Both worst-case and average-case running times of the `mergeSort` are $O(n \ln{n})$
+The `merge` function sorts the entire array given that its subarrays `arr[0, q - 1]` and `arr[q, arr.length]` are already sorted. The `mergeSort` then incorporates it to recursively divide the initial array and then subarrays into smaller ones and merging them. The divisions stop at arrays of length 1, which are trivially sorted. Both worst-case and average-case running times of the `mergeSort` are $O(n \ln{n})$.
+
+To sort the entire given array `arr`, the call `mergeSort(arr, 0, arr.length)` needs to be made.
